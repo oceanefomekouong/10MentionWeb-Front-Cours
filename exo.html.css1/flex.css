@@ -1,0 +1,124 @@
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #cbd285;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    font-weight: bold;
+}
+
+/************************************/
+
+h2 {
+    background-color:rgb(255, 214, 214) ;
+    padding: 15px;
+    margin: 0;
+}
+
+section{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#conteneurH{
+    background-color: #F7F39A;
+    padding: 5px;
+
+}
+
+.zoning {
+    display: flex;
+}
+
+#conteneurB{
+    background-color:#10828C ;
+    height: 400px;
+    width: 20%;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteneurC{
+    background-color:#A0B08B ;
+    width: 80%;
+}
+/***/
+/***/
+
+h2 {
+    background-color: #ffd6d6;
+    padding: 17px;
+    margin: 0;
+}
+#conteneurE
+{
+    display: flex;   
+}
+ 
+
+#zoneF1 {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#conteneurO{
+    background-color:#10828C ;
+    padding: 8px;
+}
+
+.Zoneduhaut{
+    display: flex;
+    text-align: center;
+    line-height: 400px;
+ }
+
+#conteneurF , #ConteneurL{
+    background-color: #ff6347;
+    height: 400px; 
+    width: 20%;
+    text-align: center;
+}
+
+
+#conteneurG {
+  background-color: #d8bfd8;
+  height: 400px;
+  width: 60%;
+}
+
+#zoning2 div div {
+    height: 500px;
+    line-height: 500px;
+    width: 60%;
+}
+
+#zoning2 div div p{
+    width: 100%;
+}
+
+#zoning2 div:first-child {
+    order: 1;
+}
+
+#zoning2 div:nth-child(2){
+    order: 3;
+}
+
+#zoning2 div :last-child {
+    order: 1;
+}
+

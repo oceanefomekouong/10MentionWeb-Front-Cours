@@ -1,0 +1,63 @@
+/*@font-face : c'est une une règle (at-rule) CSS spéciale qui permet dedéfinir des policaes personnalisées pour etre utilisée dans une page web */
+/*@font-face{
+    *font -family*/
+
+
+@font-face{
+    font-family: "Jacquarda Bastarda 9", serif;
+    src: url(../Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Noto+Sans:ital@0;1&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+/* import: c'est une règle at-rule CSS qui est utilisée pour importer des ressources externes, telles que des feuilles de style, des polices, etc., dans une feuille de style CSS */
+
+*body{
+    background-color: azure;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #4D4DC8;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+form{
+    border: 2px solid black;
+    padding: 10px 15px 25px 20px;
+}
+
+
+
+fieldset {
+    border: thick double #0a5f81;
+    margin-top: 10px;
+    padding: 30px;
+
+}
+
+legend{
+    color: steelblue;
+    background-color: #fff;
+    border: 1px solid slateblue;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+div {
+    padding: 10px 0;
+}
+
+.envoie{
+    display: flex;
+    justify-content: space-around;
+}
+
+.envoie input{
+    background-color: cadetblue;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #fff;
+}

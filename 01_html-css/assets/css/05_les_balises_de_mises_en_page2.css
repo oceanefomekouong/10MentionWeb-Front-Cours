@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #eeedeb;
+    text-align: center;
+}
+a {
+    font-weight: bold;
+    background-color: #D9A9DB;
+    border-radius: 10px;
+}
+/**************************************************************************/
+
+/**************************STYLE POUR LE HEADER****************************/
+header{
+    text-align: center;
+    border: 2px solid #3C0753;
+    padding: 15px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #3C0753;
+    font-size: 50px;
+}
+
+h1 a{
+    background-color: transparent;
+}
+
+nav a{
+    color: #fff;
+    font-weight: bold;
+    background-color: #D9A9DB;
+    text-decoration: none;
+    width: 33%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px 0;
+}
+
+nav a:hover{
+    background-color: #3C0753;
+}
+
+/*****************************FIN STYLE HEADER*****************************/
+
+
+/*****************************Style main***********************************/
+main{
+    margin-top: 10px;
+    padding: 20px 50px;
+    border: 2px solid #3C0753;
+}
+
+main :first-child img{ /* Pseudo class :first-child -> désigne le premier element enfant*/
+    border-radius: 50px;
+}
+
+main section:nth-child(2) {/*Pseudo class :nth-child(2) -> désigne le deuxieme élément enfant dans un élément*/
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    color: white;
+}
+
+main section:nth-child(2) article{
+    display: inline-block;
+    border: solid 2px rgb(248, 243, 243);
+    width: 30%;
+    padding: 50px;
+    font-weight: bold;
+    background-color:black;
+    margin: 0 5px 0 0;
+}
+
+
+
+img{
+    border-radius: 50px;
+}
+/*****************************style footer*********************************/
+footer{
+    margin-top: 20px;
+    border: #3C0753 solid 2px;
+}
+
+footer ul{
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+
+
+footer ul li{
+    margin-bottom: 20px;
+
+}
+
+
+footer a {
+    color: #3C0753;
+    padding: 8px 12px;
+}

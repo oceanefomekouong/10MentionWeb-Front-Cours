@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice </title>
+</head>
+<body>
+
+    <script>
+
+        // Consignes : si a > b afficher le , sinon si a est > inferieur à b afficher le .
+        // a > b et b>c , ok pour les deux conditions sinon une de ces deux conditions est fausse .
+       // Si a est egale à 9 ou b< 9 (est ce que a est egale a 9 ou pas ) 
+  
+
+      //  let a=10 , b=5 , c=2;
+
+
+      //  if (a > b){ // true
+
+      //   document.write (" a > est supérieur a b")
+      //  }
+      //  else {
+      //    document.write(" a est inferieur à b")
+      //  }
+      // --------------------------------------------------------------------------------
+
+      // let br = "<br>"
+      //  if(a >b && b > c ){ // true && false => false
+      //   document.write ("OK pour les deux conditions ");
+
+      //  }else { // ( false)
+
+      //   document.write (" Une de ces conditions est fausse ");
+
+      //  }
+
+      //  document.write (br);
+
+
+      //  //--------------------------------------------------
+      //  if(a = 9 || b < 9)
+      //  {
+      //    document.write ("Ok pour au moins une des deux conditions");
+
+      //  } else {
+
+      //   document.write ("Les deux conditions sont fausses");
+      //  }
+
+
+       //--------------------------------------------------------------
+
+        // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
+     // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
+     //  En cas d'echec, une alerte m'informe du problème.
+     //  Si tout se passe bien, un message de bienvenue m'accueille.
+
+     
+
+        
+        // let age= parseInt(prompt("Veuillez saisir votre age"));// je récupere l'age de l'utilsateur
+        // let prenom = prompt('Veuillez saisir votre prenom?').toLowerCase();// je recupere le prenom de l'utilisateurr
+
+
+        
+
+        // let n = "12,5";
+        // console.log(typeof n);
+
+        // let h = parseFloat (n);
+        // console.log (h);
+        // console.log(typeof h);
+
+        // let p= parseInt (n);
+        // console.log(p);
+        // console.log(typeof p);
+
+        // let prenomSemir = "semir";
+        // let ageSemir = 40;
+
+        // if (prenom == prenomSemir && age == ageSemir){// je vérifie si mes deux conditions sont vrai
+
+        //   alert ("Bienvenue Semir");// j'affiche un message de Bienvenue
+
+        // }else {
+
+
+        //   alert("Verifiez vos informations");// j'affiche un message d'erreur 
+
+        // }
+         
+         // Exercice 5 :
+
+            /*  Déclarer deux tableaux :
+                   tab1 qui contiens 5 noms
+              -tab2 qui contient 5 prenoms
+                   tab3 qui contient 5 ages 
+                Afficher en utilisant une boucles les noms et prenoms associés dans un document write
+
+            */
+
+                    // Exercice 6
+
+           /*
+                 Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+                 En utilisant le boucle for
+
+
+                 Le manège démarre
+                 C'est le tour numéro 1
+                 C'est le tour numéro 2
+                 ...
+                 C'est le tour numéro 10
+                 Le manège s'arrête
+           */
+
+
+          
+            //-------------------------------------------------------
+          
+
+            //Correction:
+
+
+            let tab1 = [ "Laure" ,"laurent" ,"lauryne", "Nora","liyah" ]; // 5 element tab1.lenght = 5
+                         //0       1           2        3       4
+            let tab2= [" Monteiro", "Montargis","Moncleir","Chanel", "tajic" ];
+
+            let tab3= [19,60,36,23,18];
+
+           for ( let s=0 ; s<5; s++){
+
+                document.write(`${tab1[s]} ${tab2[2]} ${tab3[s] }<br>`);
+
+                // tour 1 :${tabs1[0]} ${tab2[0]} ${tabs3[0] 
+                // tour 2:  ${tabs1[1]} ${tab2[1]} ${tabs3[1] 
+                // tour 3 :  ${tabs1[2]} ${tab2[2]} ${tabs3[2] 
+                // tour 4 : ${tabs1[3]} ${tab2[3]}  ${tabs3[3] 
+                // tour 5: ${tabs1[4]} ${tab2[4]}   ${tabs3[4] 
+
+
+                  // propriété ".lenght" pour gerer la taille d'un tableau 
+                
+                //laureMonteiro19laurentMontargis60
+            }
+
+
+            // Deucieme façon de faire :
+
+            let tab4 = [tab1, tab2 , tab3];
+
+          for (let k=0; k<tab4[0].lenght;k++){
+
+            document.write(`${tab1[0][k]} ${tab2[1][k]} ${tab3[2][k] }<br> `)
+          }
+
+
+          //Exerxie 6: Correction 
+
+             /*
+                 Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+                 En utilisant le boucle for
+
+
+                 Le manège démarre
+                 C'est le tour numéro 1
+                 C'est le tour numéro 2
+                 ...
+                 C'est le tour numéro 10
+                 Le manège s'arrête
+           */
+                   
+
+             for (let i = 0; i <= 11 ; i++) {
+
+             if (i === 11) { 
+              document.write( ` C'est fini , le tour de manège est <strong> terminé </strong> <br>`)
+             }
+
+             else if (i=== 0){
+              document.write(` Le manège <stong> démarre </strong> <br>`)
+             }
+
+             else {  
+              document.write (`C'est le tour de manège numéto <strong> ${i} </>strong> <br> `);
+             }
+             }
+
+             // Exercice 7
+
+             /* 
+              Créer un script qui permet de :
+                  - récupérer la moyenne de BAC à votre utilisateur
+                  - vérifier si l'utilisateur a bien renseigner un nombre, 
+                  si un nombre :
+                      => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                      => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                      => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+                      => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                  Si ce n'est pas un nombre :
+                      =>afficher  "Vous n\avez pas saisi de nombre !"   
+             */
+
+
+           let  moyenne =  prompt("Veuillez saisir votre note :");
+            
+             
+             if (!isNaN(moyenne)){// SI UN NOMBRE 
+              document.write("Vous n\avez pas saisi de nombre !");
+             }else
+                 
+             if (moyenne >= 0 && moyenne < 10){
+              document.write (`tu es recalé !`);
+             }
+             else if (moyenne >= 10 && moyenne <12){
+             document.write (`Tu passe , sans mention !`);
+             }
+             else if (moyenne >= 12 && moyenne <=20){  
+             document.write ( `Reçu avec mention ! : `);
+             }
+             else if(moyenne >= 12 && moyenne <=20) { 
+             document.write (` la moyenne doit etre comprise entre 0 et 20`)};     
+
+             +!
+                  
+
+
+              
+             //-----------------------------------
+
+            
+
+
+              // Exercice 8
+        /* 
+
+            Créer un script qui permet de :
+                récuperer un nombre de l'utilsateur, 
+                le nombre doit être différent de 0 et positif
+                vérifier et afficher sur la page si ce nombre ainsi que ceux qui le suivent jusqu'au 10.
+                Si ce n'est pas un nombre :
+                    => afficher  "Vous n'avez pas saisi de nombre !"  
+                si un nombre :
+                    => si un nombre pair -> affiche " le nombre est pair"
+                    => si un nombre impair -> affiche " le nombre est impair"
+
+
+            créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10.
+            
+            
+        */
+          
+
+             //let nbr = prompt = ('Veuillez saisir un nombre :');
+             console.log(Math.sign(nbr));
+
+              if (!isNaN(nbr)) {
+
+                document.write(" Vous n'avez pas saisi de nombre !");
+            
+              } else {
+
+                if (Math.sign (nbr) == -1 || Math.sign(nbr)== 0) {
+                 
+                    document.write("le nombre doit être différent de 0 et positif");
+                
+                  } else {
+
+                      while (nbr <= 10){
+
+                         if (nbr% 2== 0) {
+                            document.write(`le nombre ${nbr} st pair`);
+                  
+                           } else {
+
+                              document.write (`le nombre ${nbr} est impair`);
+                            }
+
+                        nbr++
+                  }
+
+
+               
+              }
+                  
+             }
+
+
+
+          //Exercice 9
+
+         // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+         //Exercice 10
+
+         let reponse = '';
+         let i =1 ;
+
+         while(reponse.toLowerCase() !== "oui " && reponse.toLowerCase ( ) !== "non"){
+            
+             reponse = prompt ("Alors on joue a ni oui ni non ?");
+             document.write("La"+i+ "fois vous avez inséré" + reponse + "<br>");
+            i++
+              
+         }
+          document.write("Désolé vous avez perdu!");
+
+       
+
+        /* 
+            Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+            il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+            Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+            il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+        */
+         
+         for (let i = 0; i <20 ; i++){
+              if (i % 3 == 0 && i % 5 != 0){
+
+                 document.write("Grala <br>");
+
+              }else if (i % 5 == 0 && i % 3!= 0){
+         
+                 document.write ("Bu <br>");
+
+             }else if (i % 5 == 0 && i % 3== 0){
+
+                 document.write("GralaBu <br>")
+          }
+         }
+
+
+          //Exercice 11
+         /*
+            Créez un array vide = []
+            Puis créez une fonction qui prendra 2 paramètres: 2 nombres
+            Le seul but de la fonction sera de pousser le premier nombre à la suite de l'array
+            x fois, par rapport au 2eme nombre
+            Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
+         */ 
+
+           let myArray =[];
+           console.log(myArray)
+
+           function array(nombre1,nombre2){
+
+             for(  let i= nombre1 ; i++)
+            
+
+            
+           }
+
+
+
+
+           array()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Exercice 12
+
+        /*
+            Créez un array avec plusieurs nombres à l'intérieur
+
+            Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
+        */
+
+
+        //Exercice 13
+        /*
+            A l'aide de ce tableau et d'une boucle:
+        */
+
+        // const clients = [
+        //     {
+        //         firstname: "Claire",
+        //         age: 28,
+        //     },
+        //     {
+        //         firstname: "Max",
+        //         age: 32,
+        //     },
+        //     {
+        //         firstname: "Léo",
+        //         age: 23,
+        //     },
+        // ];
+
+        // Calculez et affichez dans le terminal la somme des âges.
+
+
+
+
+        // Exercice 14
+
+        /* Créer une fonction qui doit déterminer si un utilisateur à insérer correctement un @ dans son adresse email.
+            Puis afficher le résultat: true ou false
+            ex: testEmail('julien@gmail.com') => true
+            ex: testEmail('julien.gmail.com') => false
+        */
+
+
+
+         
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

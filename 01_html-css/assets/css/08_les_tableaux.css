@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffe7e7;
+}
+
+h1{
+    text-align: center;
+
+}
+
+caption{
+    color: #6e2142;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table{
+    border-collapse: collapse;/*Par défaut la bordure contient 2 traits, pour que le trait soit unique on utilise la propriété border-collapse avec une valeur collapse*/
+    border: 3px solid #6e2142;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #c7c8cc;
+}
+
+th, td{
+    border: 2px solid #6e2142;
+}
+
+thead, tfoot{
+    background-color: #be7575;
+}
+#demoRowspan tr:first-child:not(:last-child) {
+    background-color: #be7575;
+}
+
+
+#exo1 td, #exo2 td {
+    height: 50px;
+    width: 50px;
+}
+
+.noir{
+    background-color: black;
+}
+
+.rouge{
+    background-color: red;
+}
+ 
+#exo1 table , #exo1 td , #exo2 table ,#exo2 td{
+   border: none;
+}
+
+.borderT{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+css
+    
+#exoRowspan {
+ height: 15em;
+ background-color: white;
+}
+
+
+
+#exoRowspan th, #exoRowspan td {
+ border: none;  
+}
+
+.black {
+ background-color: black;
+}
+.red {
+ background-color: red;
+}
+
+.borderLeft {
+ border-radius: 10px 0 0 0;
+}
+
+.borderRight {
+ border-radius: 0 10px 0 0;
+}
+   

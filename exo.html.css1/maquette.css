@@ -1,0 +1,80 @@
+.logo{
+    height: 130px;
+
+}
+#logo1
+{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF3366;
+    font-weight: bold;
+    margin: 10px 10px;
+
+}
+
+header{
+    border-bottom: #FF3366 10px ridge ;
+}
+
+section{
+    text-align: center;
+}
+
+div,section1 {
+ display: flex;
+ background-color: #FFE7E7;
+ padding: 10px;
+ justify-content: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
