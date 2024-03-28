@@ -124,15 +124,15 @@
             //Correction:
 
 
-            let tab1 = [ "Laure" ,"laurent" ,"lauryne", "Nora","liyah" ]; // 5 element tab1.lenght = 5
-                         //0       1           2        3       4
-            let tab2= [" Monteiro", "Montargis","Moncleir","Chanel", "tajic" ];
+            // let tab1 = [ "Laure" ,"laurent" ,"lauryne", "Nora","liyah" ]; // 5 element tab1.lenght = 5
+          //                //0       1           2        3       4
+          //   let tab2= [" Monteiro", "Montargis","Moncleir","Chanel", "tajic" ];
 
-            let tab3= [19,60,36,23,18];
+          //   let tab3= [19,60,36,23,18];
 
-           for ( let s=0 ; s<5; s++){
+          //  for ( let s=0 ; s<5; s++){
 
-                document.write(`${tab1[s]} ${tab2[2]} ${tab3[s] }<br>`);
+          //       document.write(`${tab1[s]} ${tab2[2]} ${tab3[s] }<br>`);
 
                 // tour 1 :${tabs1[0]} ${tab2[0]} ${tabs3[0] 
                 // tour 2:  ${tabs1[1]} ${tab2[1]} ${tabs3[1] 
@@ -144,17 +144,17 @@
                   // propriété ".lenght" pour gerer la taille d'un tableau 
                 
                 //laureMonteiro19laurentMontargis60
-            }
+            // }
 
 
             // Deucieme façon de faire :
 
-            let tab4 = [tab1, tab2 , tab3];
+          //   let tab4 = [tab1, tab2 , tab3];
 
-          for (let k=0; k<tab4[0].lenght;k++){
+          // for (let k=0; k<tab4[0].lenght;k++){
 
-            document.write(`${tab1[0][k]} ${tab2[1][k]} ${tab3[2][k] }<br> `)
-          }
+          //   document.write(`${tab1[0][k]} ${tab2[1][k]} ${tab3[2][k] }<br> `)
+          // }
 
 
           //Exerxie 6: Correction 
@@ -173,20 +173,20 @@
            */
                    
 
-             for (let i = 0; i <= 11 ; i++) {
+             ////for (let i = 0; i <= 11 ; i++) {
+////
+             ////if (i === 11) { 
+             //// document.write( ` C'est fini , le tour de manège est <strong> terminé </strong> <br>`)
+             ////}
 
-             if (i === 11) { 
-              document.write( ` C'est fini , le tour de manège est <strong> terminé </strong> <br>`)
-             }
+            //// else if (i=== 0){
+             //// document.write(` Le manège <stong> démarre </strong> <br>`)
+            //// }
 
-             else if (i=== 0){
-              document.write(` Le manège <stong> démarre </strong> <br>`)
-             }
-
-             else {  
-              document.write (`C'est le tour de manège numéto <strong> ${i} </>strong> <br> `);
-             }
-             }
+             ////else {  
+             //// document.write (`C'est le tour de manège numéto <strong> ${i} </>strong> <br> `);
+             ////}
+             ////}
 
              // Exercice 7
 
@@ -204,26 +204,26 @@
              */
 
 
-           let  moyenne =  prompt("Veuillez saisir votre note :");
+         //  let  moyenne =  prompt("Veuillez saisir votre note :");
             
-             
-             if (!isNaN(moyenne)){// SI UN NOMBRE 
-              document.write("Vous n\avez pas saisi de nombre !");
-             }else
+           //  
+            // if (!isNaN(moyenne)){// SI UN NOMBRE 
+            //  document.write("Vous n\avez pas saisi de nombre !");
+            // }else
                  
-             if (moyenne >= 0 && moyenne < 10){
-              document.write (`tu es recalé !`);
-             }
-             else if (moyenne >= 10 && moyenne <12){
-             document.write (`Tu passe , sans mention !`);
-             }
-             else if (moyenne >= 12 && moyenne <=20){  
-             document.write ( `Reçu avec mention ! : `);
-             }
-             else if(moyenne >= 12 && moyenne <=20) { 
-             document.write (` la moyenne doit etre comprise entre 0 et 20`)};     
+            // if (moyenne >= 0 && moyenne < 10){
+            //  document.write (`tu es recalé !`);
+             //}
+             //else if (moyenne >= 10 && moyenne <12){
+             //document.write (`Tu passe , sans mention !`);
+             //}
+             //else if (moyenne >= 12 && moyenne <=20){  
+             //document.write ( `Reçu avec mention ! : `);
+             //}
+            // else if(moyenne >= 12 && moyenne <=20) { 
+            // document.write (` la moyenne doit etre comprise entre 0 et 20`)};     
 
-             +!
+             
                   
 
 
@@ -254,38 +254,38 @@
           
 
              //let nbr = prompt = ('Veuillez saisir un nombre :');
-             console.log(Math.sign(nbr));
+             //console.log(Math.sign(nbr));
 
-              if (!isNaN(nbr)) {
+            //   if (!isNaN(nbr)) {
 
-                document.write(" Vous n'avez pas saisi de nombre !");
+            //     document.write(" Vous n'avez pas saisi de nombre !");
             
-              } else {
+            //   } else {
 
-                if (Math.sign (nbr) == -1 || Math.sign(nbr)== 0) {
+            //     if (Math.sign (nbr) == -1 || Math.sign(nbr)== 0) {
                  
-                    document.write("le nombre doit être différent de 0 et positif");
+            //         document.write("le nombre doit être différent de 0 et positif");
                 
-                  } else {
+            //       } else {
 
-                      while (nbr <= 10){
+            //           while (nbr <= 10){
 
-                         if (nbr% 2== 0) {
-                            document.write(`le nombre ${nbr} st pair`);
+            //              if (nbr% 2== 0) {
+            //                 document.write(`le nombre ${nbr} st pair`);
                   
-                           } else {
+            //                } else {
 
-                              document.write (`le nombre ${nbr} est impair`);
-                            }
+            //                   document.write (`le nombre ${nbr} est impair`);
+            //                 }
 
-                        nbr++
-                  }
+            //             nbr++
+            //       }
 
 
                
-              }
+            //   }
                   
-             }
+            //  }
 
 
 
@@ -294,17 +294,17 @@
          // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
          //Exercice 10
 
-         let reponse = '';
-         let i =1 ;
+        //  let reponse = '';
+        //  let i =1 ;
 
-         while(reponse.toLowerCase() !== "oui " && reponse.toLowerCase ( ) !== "non"){
+        //  while(reponse.toLowerCase() !== "oui " && reponse.toLowerCase ( ) !== "non"){
             
-             reponse = prompt ("Alors on joue a ni oui ni non ?");
-             document.write("La"+i+ "fois vous avez inséré" + reponse + "<br>");
-            i++
+        //      reponse = prompt ("Alors on joue a ni oui ni non ?");
+        //      document.write("La"+i+ "fois vous avez inséré" + reponse + "<br>");
+        //     i++
               
-         }
-          document.write("Désolé vous avez perdu!");
+        //  }
+        //   document.write("Désolé vous avez perdu!");
 
        
 
@@ -313,26 +313,25 @@
             il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
             Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
             il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
-        */
+         */
          
-         for (let i = 0; i <20 ; i++){
-              if (i % 3 == 0 && i % 5 != 0){
+//          for (let i = 0; i <20 ; i++){
+//               if (i % 3 == 0 && i % 5 != 0){
+// -
+//                  document.write("Grala <br>");
 
-                 document.write("Grala <br>");
-
-              }else if (i % 5 == 0 && i % 3!= 0){
+//               }else if (i % 5 == 0 && i % 3!= 0){
          
-                 document.write ("Bu <br>");
+//                  document.write ("Bu <br>");
 
-             }else if (i % 5 == 0 && i % 3== 0){
+//              }else if (i % 5 == 0 && i % 3== 0){
 
-                 document.write("GralaBu <br>")
-          }
-         }
+//                  document.write("GralaBu <br>")
+//           }//          }
 
 
-          //Exercice 11
-         /*
+            //Exercice 11
+           /*
             Créez un array vide = []
             Puis créez une fonction qui prendra 2 paramètres: 2 nombres
             Le seul but de la fonction sera de pousser le premier nombre à la suite de l'array
@@ -340,67 +339,158 @@
             Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
          */ 
 
-           let myArray =[];
-           console.log(myArray)
+           let myArray =[];// si je met la variable à l'exterieur de ma fonction , il faut vider le tableau avant de sortir de la fonction
+           //console.log(myArray)
 
-           function array(nombre1,nombre2){
+           function array(nb1,nb2) {
+                         //5 ,  //3
 
-             for(  let i= nombre1 ; i++)
-            
+                for (let i = 0 ; i < nb2; i++){
 
-            
+                     myArray.push(nb1);
+               }
+
+                document.write ("myArray =[" + myArray +"] <br>")
+                myArray = [];
            }
 
+           // myArray = [ 5, 5 , 5]
+           
+           //array(5,3)
+           // array(6,8)
 
 
+           //2éme façon de faire :
 
-           array()
+           let maFonction = (nbr1, nbr2)=> {
 
+               let table = [];
+               for (let i = 0; i < nbr2; i++) {
 
+                    table.push(nbr1);
 
+           }
 
+            document.write ("myArray = [" + table +"] <br>")
+          
 
+           }
 
+           maFonction(10,20);
+           maFonction(9,7);
 
+           //Exercice 12
 
-
-
-
-
-
-
-
-        //Exercice 12
-
-        /*
+           /*
             Créez un array avec plusieurs nombres à l'intérieur
 
             Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
-        */
+           */
+
+           // 1ére façon de faire 
+           let tab = [50, 7, 20, 60 , 10];
+
+           let sommeTableau = ()=> {
+
+                let somme = 0 ;
+                for (let i = 0; i < tab.length; i++) {
+
+                     somme+= tab[i];  // somme = somme + nombre [i]
+                }
+
+                document.write(somme + "<br>");
+            }
+
+            sommeTableau();
 
 
-        //Exercice 13
-        /*
+
+
+             // 2eme façon de faire
+              let monArray = function(nombre){
+
+              let somme = 0;
+              for (let i = 0; i < nombre.length; i++) {
+
+                    somme += nombre[i]; // somme = somme + nombre[i]
+
+                // somme = 0 + 5 = 5
+                // somme = 5 + 40 = 45
+                // somme = 45+ 15 = 60
+                // somme = 60 + 60 =120
+
+              }
+
+              return somme ; // la fonction retourne un evlaeur : la somme des éléments dans le tableau
+
+          }  
+          document.write(monArray([5, 40 ,15 ,60]));
+
+
+
+         //Exercice 13
+         /*
             A l'aide de ce tableau et d'une boucle:
-        */
+         */
 
-        // const clients = [
-        //     {
-        //         firstname: "Claire",
-        //         age: 28,
-        //     },
-        //     {
-        //         firstname: "Max",
-        //         age: 32,
-        //     },
-        //     {
-        //         firstname: "Léo",
-        //         age: 23,
-        //     },
-        // ];
+          const clients = [
+            //0
+           {
+                firstname: "Claire",
+                age: 28,
+            },
+            //cients[0]['firstname']
+            //1
+           {
+               firstname: "Max",
+               age: 32,
+            },
+            //2
+            {
+                firstname: "Léo",
+                age: 23,
+            },
+         ];
 
-        // Calculez et affichez dans le terminal la somme des âges.
+         // Calculez et affichez dans le terminal la somme des âges.
 
+         //1ere façon de faire
+
+         let totalAge = 0;
+
+         //  for (let client of clients) {
+
+         //  totalAge += client.age// totalAge = totaleageAge + client.age
+          
+         // }
+         // document.write(`la somme des Ages : ${totalAge}`);
+
+
+         //-------------------------------------------------------------------------------------------
+
+         //2eme façon de faire : boucle for
+
+        //  for (let index = 0; index < array.length; index++) {
+          
+            // totalAge+= clients[i].age
+          
+         //}
+
+          // document.write(`la somme des Ages : ${totalAge}`);
+
+
+         // 3eme façon de faire : boucles wlhile
+
+         let index = 0;
+
+              while(index < clients.length ){
+
+                totalAge += clients[index].age; 
+
+                index++ ;
+
+             }
+              document.write(`la somme des Ages : ${totalAge}`);
 
 
 
@@ -411,7 +501,61 @@
             ex: testEmail('julien@gmail.com') => true
             ex: testEmail('julien.gmail.com') => false
         */
+       let email = prompt ('Entrez votre adresse email !'); // s@h
 
+       // email [0] => s
+       // email [1] => @
+       // email [2] => h
+       
+       function verifEmail(email){
+
+                let i = 0
+                let j ;
+
+            while( i < email.length){
+
+                if (email[i] === "@") {
+                 
+                       j = email[i] ; //i = @
+                  
+          
+                }
+
+                i++;
+
+             }
+             console.log(j);
+
+             if( j == "@") {   //if (i == "@")
+                 document.write ("true")
+
+              
+             } else {
+                  document.write ("false");
+             }
+    
+       }
+
+        //verifEmail(email);
+
+
+        // avec la fonction indexOf()
+
+            function verif(email){
+
+                 let index = email.indexOf("@")
+                 if (index == -1 ) {
+            
+                     document.write ("false");
+
+                } else {
+        
+                     document.write ("true");
+        
+                }
+            
+           }
+           verif(email)
 
 
          
